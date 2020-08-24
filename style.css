@@ -62,7 +62,6 @@ font-family: 'Poppins', sans-serif;
 }
 .main_banner-content{
     position: relative;
-    width: 30%;
 }
 .main_banner-title{
     font-family: var(--poppins);
@@ -91,6 +90,7 @@ font-family: 'Poppins', sans-serif;
 /* =====================================  Area video */
 .section_video{
     margin-bottom: 4rem;
+    background: linear-gradient(180deg, #fcfcfc 70%, var(--color-light) 0);
 }
 .video_content{
     display: flex;
@@ -116,15 +116,11 @@ font-family: 'Poppins', sans-serif;
     width: 70%;
     margin: 1.5rem 0 2.5rem 0;
     font-family: var(--open-sans);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 2rem;
 }
 
-/* .img_video{
-    width: 1000px;
-    height: 450px;
-} */
 .play-icon{
     width: 5rem;
     height: 5rem;
@@ -141,5 +137,46 @@ font-family: 'Poppins', sans-serif;
     }
     100%{
         box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
+
+.modal-dialog{
+    max-width: 560px;
+}
+.button_modal:focus{
+    outline: none;
+}
+
+.video-container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.video-container::after{
+    padding-top:56.25%;
+    display: block;
+    content: '';
+}
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================================================= MEDIA QUERIES */
+
+@media screen and (max-width:768px){
+    .main_banner-title{
+        font-size: 2em;
+    }
+    .main_banner-title h1{
+        font-size: 2em;
+        line-height: 2.7rem;
+    }
+    .video_text h2{
+        width: 100%;
+        font-size: 1.1em;
     }
 }
