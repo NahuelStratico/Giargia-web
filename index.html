@@ -16,10 +16,10 @@
 </head>
 <body>
     <!-- Menu Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg menu-navegacion">
         <div class="container">
             <a class="navbar-brand" href="#home"><img src="./img/logo-GA-2019.jpg" alt="logo Giargia" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars icon_menu"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,19 +45,19 @@
     <div class="main_banner">
         <img src="./img/image-hero.png" alt="main-image" class="main_banner-image">
         <div class="main_banner-content">
-            <h1 class="main_banner-title">Hacemos tu <br> proyecto posible</h1>
+            <h1 class="main_banner-title">Hacemos posible la <br> construcción de tu hogar.</h1>
             <button class="btn main_banner-boton">
-                <a href="#" class="main_banner_boton-link" role="button">Ver más</a>
+                <a href="#video" class="main_banner_boton-link" role="button">Conócenos</a>
             </button>
         </div>
     </div>
 
     <!-- Seccion Video -->
-    <section class="section_video">
+    <section class="section_video" id="video">
         <div class="container video_content">
             <div class="video_text">
-                    <h1>Trabajamos con profesionalismo, <br> compromiso e innovación</h1>
-                    <h2>Somos una empresa constructora con amplia experiencia, a través de más de <span class="font-weight-bold">40 años de trabajo ininterrumpido</span>, realizando una tarea que nos apasiona y, la cual, nos compromete con nuestros clientes.</h2>
+                    <h1>Construimos con profesionalismo, <br> compromiso e innovación</h1>
+                    <h2>Somos una empresa constructora con amplia experiencia, <span class="font-weight-bold">construyendo desde 1994 ininterrumpidamente</span>, realizando una tarea que nos apasiona y, la cual, nos compromete con nuestros clientes.</h2>
             </div>
             <button class="position-relative d-flex justify-content-center align-items-center border-0 p-0 button_modal" data-toggle="modal" data-target="#exampleModal">
                 <div class="play-icon position-absolute bg-dark rounded-circle d-flex">
@@ -82,6 +82,48 @@
         </div>
     </div>
 
+    <!-- Servicios -->
+    <main class="main_servicios">
+        <div class="servicios">
+            <div class="row">
+                <div class="col servicios_content">
+                    <h3 class="title_servicios">Nuestros servicios</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container icon_container">
+            <div class="row icon_row">
+                <div class="col-12 col-md-4 civil">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3 class="text-icon">Construcciones Civiles</h3>
+                </div>
+                <div class="col-12 col-md-4 hogar">
+                    <i class="fas fa-user-friends"></i>
+                    <h3 class="text-icon">Unifamiliar / multifamiliar</h3>
+                </div>
+                <div class="col-12 col-md-4 comercial">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3 class="text-icon">Comercial</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mas sobre nosotros -->
+    <div class="container info_container">
+        <h4 class="info_title">Más sobre nosotros</h4>
+        <div class="row info_content">
+            <div class="col-12  col-md-4 info_border">
+                <h6 class="info_text">Mira nuestras obras finalzadas. <br> Contamos con muchos proyectos.</h6>
+                <button class="btn btn-outline-info info_margin">Ver más</button>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <h6 class="info_text">Obras que se ven desde el cielo. <br> Con el maximo profesionalismo.</h6>
+                    <button class="btn btn-outline-info">Ver más</button>
+            </div>
+        </div>
+    </div>
+
 
     
 
@@ -90,7 +132,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
     <!-- Script -->
+    <script src="./index.js"></script>
     <script>
         let buttonModal = document.querySelector('.button_modal');
         let iFrame = document.querySelector('.myFrame');
