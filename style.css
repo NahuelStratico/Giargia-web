@@ -278,6 +278,139 @@ font-family: 'Poppins', sans-serif;
     line-height: 34px;
 }
 
+/* ====================================== Carousel / cta instagram*/
+.instagram_container{
+    margin-top: 10rem;
+    margin-bottom: -95px;
+}
+.instagram_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+}
+.instagram_col{
+    background: var(--color-primary);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    z-index: 10!important;
+}
+.button_instagram{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 0;
+    text-align: center;
+}
+.instagram_title{
+    color: var(--color-light);
+    font-family: var(--open-sans);
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 0 1.5rem;
+}
+.instagram_cta{
+    color: var(--color-light);
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.carousel_container{
+    max-height: 500px;
+    overflow: hidden;
+    margin: 4rem 0 0 0;
+    z-index: 1!important;
+}
+.carousel_img{
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+/* ================================== Footer */
+
+.logo_footer{
+    width: 70px;  
+}
+.footer_row{
+    margin: 0;
+    background: var(--color-footer);
+    padding: 4rem 0;
+}
+.footer_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_title{
+    color: var(--color-light);
+}
+.nav_footer-link{
+    color: var(--color-light);
+}
+.nav_footer{
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav_footer-item{
+    margin-right: .7rem;
+}
+.nav_footer-link:hover{
+    color: var(--color-light);
+    text-decoration: none;
+}
+.icon_social-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+[class*="fab"]{
+    color: var(--color-light);
+    font-size: 1.5em;
+    margin-right: 2rem;
+}
+.derechos_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.derechos_icon{
+    color: var(--color-light);
+    margin-right: .3rem;
+}
+.derechos_text{   
+    color: var(--color-light);
+    margin: 0;
+    margin-right: .7rem;
+}
+.derechos_link{
+    color: var(--color-light);
+}
+.derechos_link:hover{
+    color: var(--color-light);
+    text-decoration: none;
+}
+.derechos_icon,.derechos_text, .derechos_link{
+    font-size: .8em;
+}
+
 /* ================================================= MEDIA QUERIES */
 
 @media screen and (max-width:768px){
@@ -311,5 +444,40 @@ font-family: 'Poppins', sans-serif;
     }
     .info_margin{
         margin-bottom: 2rem;
+    }
+    /* =============== cta social media */
+    .button_instagram{
+        flex-direction: column;
+    }
+    .footer_col{
+        text-align: center;
+    }
+    .footer_title{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .nav_footer{
+        flex-direction: column;
+    }
+    .nav_footer-item{
+        margin-bottom: .7rem;
+    }
+    .derechos_container{
+        flex-direction: column;
+    }
+    .derechos_icon{
+        margin-bottom: .3rem;
+    }
+    .derechos_text{
+        margin-bottom: .3rem;
+    }
+    [class*="fab"]{
+        margin-right: 0;
+    }
+    .margin_insta{
+        margin: 0 1.4rem;
+    }
+    .icon_social-container{
+        margin: -0.5rem 0 2rem 0;
     }
 }
