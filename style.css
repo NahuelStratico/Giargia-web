@@ -22,6 +22,7 @@ font-family: 'Poppins', sans-serif;
 
 
 /* ===================================== NAVBAR */
+
 .navbar{
     background: var(--color-light);
     min-height: 80px;
@@ -32,12 +33,19 @@ font-family: 'Poppins', sans-serif;
     max-width: 180px;
 }
 
-.nav-link{color: var(--color-footer);}
-.nav-link:hover{color: var(--color-footer);}
+.nav-link{
+    color: var(--color-footer);
+    font-family: var(--open-sans);
+    transition: .2s;
+}
+.nav-link:hover{
+    color: var(--color-footer);
+    font-weight: 600;
+}
 
 .navbar-toggler:focus{outline: none;}
 .icon_menu{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 /* ====================================== BANNER */
@@ -72,31 +80,17 @@ font-family: 'Poppins', sans-serif;
     line-height: 1.3em;
     margin: 0;
 }
-.main_banner-boton{
-    background: var(--color-light);
-    transition: .3s;
-    margin-top: 2rem;
-    padding: 0;
-}
-.main_banner_boton-link{
-    color: var(--color-footer);
-    font-family: var(--open-sans);
-    font-weight: 600;
-    width: 100%;
-    height: 100%;
+.btn_portada_content{
     display: inline-block;
-    padding: .3em .7em;
-}
-.main_banner_boton-link:hover{
-    color: var(--color-light);
-    text-decoration: none;
+    margin-top: 2rem;
 }
 .main_banner_boton:focus{
     outline: none;    
 }
-.main_banner-boton:hover{
-    background: transparent;
-    border: 2px solid var(--color-primary);
+.btn_portada{
+    color: var(--color-footer);
+    font-family: var(--open-sans);
+    font-weight: 400;
 }
 
 /* =====================================  Area video */
@@ -414,6 +408,9 @@ font-family: 'Poppins', sans-serif;
 /* ================================================= MEDIA QUERIES */
 
 @media screen and (max-width:768px){
+    .icon_menu{
+        font-size: 1.3em;
+    }
     .main_banner-title{
         font-size: 1.8em;
     }
