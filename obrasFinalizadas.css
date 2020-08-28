@@ -49,6 +49,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 }
 .obras_finalizadas-col{
     display: flex;
@@ -62,6 +63,7 @@ body{
     font-weight: 600;
     margin-top: 4rem;
     line-height: 3rem;
+    text-align: center;
 }
 .hr{
     display: inline-block;
@@ -81,11 +83,15 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 .card_col .card{
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+.card-img-top{
+    height: 160px;
 }
 .card-title{
     text-transform: uppercase;
@@ -179,7 +185,9 @@ body{
     .icon_menu{
         font-size: 1.3em;
     }
-
+    .obras_final-title{
+        font-size: 1.6em;
+    }
     /* =============== cta social media */
     .button_instagram{
         flex-direction: column;

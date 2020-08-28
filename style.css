@@ -294,6 +294,7 @@ font-family: 'Poppins', sans-serif;
     z-index: 10!important;
 }
 .button_instagram{
+    text-decoration: none;
     display: inline-block;
     display: flex;
     flex-direction: row;
@@ -398,7 +399,7 @@ font-family: 'Poppins', sans-serif;
     color: var(--color-light);
 }
 .derechos_link:hover{
-    color: var(--color-light);
+    color: yellow;
     text-decoration: none;
 }
 .derechos_icon,.derechos_text, .derechos_link{
