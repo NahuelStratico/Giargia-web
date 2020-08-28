@@ -76,6 +76,11 @@ body{
 /* ======================= CARDS */
 .card_row{
     margin: 4rem 0 ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .card_col{
     padding: 0;
