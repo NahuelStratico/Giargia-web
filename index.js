@@ -2,6 +2,7 @@ let main = document.getElementById('main')
 let back = document.getElementById('back')
 let galeriaContainer = document.getElementById('galeria_container')
 let galeria = document.getElementById('galeria')
+let titleCard = document.getElementById('title_card-container')
 
 
 // Buttons
@@ -50,6 +51,9 @@ btnEncuentroS.addEventListener('click', () => {
     main.style.display = 'none'
     galeriaContainer.style.display = 'block'
     galeria.style.display = 'block'
+    titleCard.style.display = 'block'
+
+    titleCard.innerHTML = ' <h1 class="title_card_galery">Encuentro S</h1>'
 
     galeria.innerHTML = ''
 
@@ -83,6 +87,8 @@ btnTortugasR .addEventListener('click', () => {
     galeriaContainer.style.display = 'block'
     galeria.style.display = 'block'
 
+    titleCard.innerHTML = ' <h1 class="title_card_galery">Tortugas R</h1>'
+
     galeria.innerHTML = ''
 
     let imagenes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
@@ -112,6 +118,8 @@ btnTortugasQ .addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Tortugas Q</h1>'
 
   galeria.innerHTML = ''
 
@@ -143,6 +151,8 @@ btnGolfY .addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Golf Y</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7,8,9,10,11,12];
@@ -172,6 +182,8 @@ btnpuertosF.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Muelles Puertos F</h1>'
 
   galeria.innerHTML = ''
 
@@ -203,6 +215,8 @@ btnpachecoPS.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Pacheco Golf PS</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
@@ -232,6 +246,8 @@ btnPilarA.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Pilar A</h1>'
 
   galeria.innerHTML = ''
 
@@ -263,6 +279,8 @@ btnMirafloresM .addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Miraflores M</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7];
@@ -292,6 +310,8 @@ btnLagoGolfI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Lagos del Golf I</h1>'
 
   galeria.innerHTML = ''
 
@@ -323,6 +343,8 @@ btnLagoGolL.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Lagos del Golf L</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7,8];
@@ -353,6 +375,8 @@ btnCastoresI.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Castores I</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7,8,9];
@@ -381,6 +405,8 @@ btnIsalaI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Isla I</h1>'
 
   galeria.innerHTML = ''
 
@@ -411,6 +437,8 @@ btnEncuentroI.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Encuentro I</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7,8,9];
@@ -439,6 +467,8 @@ btnGolfI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Golf I</h1>'
 
   galeria.innerHTML = ''
 
@@ -469,6 +499,8 @@ btnPilaraII.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Pilar II</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6];
@@ -497,6 +529,8 @@ btnAlisos.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Alisos</h1>'
 
   galeria.innerHTML = ''
 
@@ -527,6 +561,8 @@ btnFarmCondos.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm Condominios</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5];
@@ -555,6 +591,8 @@ btnFarmI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm I</h1>'
 
   galeria.innerHTML = ''
 
@@ -585,6 +623,8 @@ btnFarmII.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm II</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6];
@@ -613,6 +653,8 @@ btnMartindaleI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Martindale I</h1>'
 
   galeria.innerHTML = ''
 
@@ -643,6 +685,8 @@ btnFarmIV.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm IV</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7];
@@ -671,6 +715,8 @@ btnFarmIII.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm III</h1>'
 
   galeria.innerHTML = ''
 
@@ -701,6 +747,8 @@ btnFarmV.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm V</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4];
@@ -729,6 +777,8 @@ btnSantaClaraI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Santa Clara I</h1>'
 
   galeria.innerHTML = ''
 
@@ -759,6 +809,8 @@ btnCastoresII.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Castores II</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6];
@@ -787,6 +839,8 @@ btnMartindaleII.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Martindale II</h1>'
 
   galeria.innerHTML = ''
 
@@ -817,6 +871,8 @@ btnArmeniaI.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Armenia I</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5,6,7];
@@ -845,6 +901,8 @@ btnMirafloresI.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Miraflores I</h1>'
 
   galeria.innerHTML = ''
 
@@ -875,6 +933,8 @@ btnFarmVII.addEventListener('click', () => {
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
 
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm VII</h1>'
+
   galeria.innerHTML = ''
 
   let imagenes = [1,2,3,4,5];
@@ -903,6 +963,8 @@ btnFarmVIII.addEventListener('click', () => {
   main.style.display = 'none'
   galeriaContainer.style.display = 'block'
   galeria.style.display = 'block'
+
+  titleCard.innerHTML = ' <h1 class="title_card_galery">Farm VIII</h1>'
 
   galeria.innerHTML = ''
 

@@ -42,83 +42,24 @@ body{
     font-size: 1em;
 }
 
-/* ========================= Galeria de imagenes */
-#galeria_container{
-    margin-bottom: 2rem;
-}
-
-.back_container{
-    margin: 7rem 0 4rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-.back_content{
-    text-decoration: none;
-    color: var(--color-footer);
-}
-.back_content:hover{
-    text-decoration: none;
-    color: var(--color-primary);
-}
-.back_content span{
-    font-family: var(--open-sans);
-    font-size: 1.3em;
-}
-.arrow{
-    font-size: 1.5em;
-    color: var(--color-footer);
-    margin-right: 1rem;
-}
-#title_card-container{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    border: none;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);   
-}
-.title_card_galery{
-    text-align: center;
-    padding: .3rem 0;
-    margin: 0;
-    font-family: var(--poppins);
-    font-size: 2em;
-    color: var(--color-footer);
-    font-weight: 600;
-}
-#galeria_container{
-    display: none;
-}
-.img-card{
-    object-fit: cover;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    cursor: pointer;
-}
-
-/* ============= Title */
-.obras_finalizadas-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* ==================================== title section */
+.video_drone-container{
     margin-top: 3rem;
 }
-.obras_finalizadas-col{
+.video_drone-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video_drone-col{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.obras_final-title{
+.video_drone-title{
     font-family: var(--open-sans);
     font-size: 2em;
     font-weight: 600;
@@ -132,9 +73,29 @@ body{
     height: 3px;
     background: var(--color-primary);
     border: none;
+    margin-bottom: 1rem;
 }
-
-/* ======================= CARDS */
+.video_drone-p{
+    font-family: var(--open-sans);
+    font-size: 1.2em;
+    color: var(--color-footer);
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+}
+.icon_video_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+.icon_youtube, .icon_instagram{
+    color: var(--color-primary) !important;
+    font-size: 2em !important;
+    margin: 0 !important;
+}
+/* ============================== cards */
 .card_row{
     margin: 4rem 0 ;
     display: flex;
@@ -156,19 +117,14 @@ body{
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
-.h-160{
-    height: 160px;
-}
-.card-title{
-    text-transform: uppercase;
-}
-.card-text{
-    font-family: var(--open-sans);
-    font-size: .9em;
-    font-weight: 400;
-}
+
+
+
 
 /* ================================== Footer */
+.footer_container{
+    margin-top: 2rem;
+}
 
 .logo_footer{
     width: 70px;  
@@ -251,21 +207,9 @@ body{
     .icon_menu{
         font-size: 1.3em;
     }
-    .obras_final-title{
+    .video_drone-title{
         font-size: 1.6em;
-    }
-    .arrow {
-        font-size: 1em;
-        margin-right: .4rem;
-    }
-    .back_content span{
-        font-size: 1em;
-    }
-    #title_card-container{
-        width: 100%;
-    }
-    .title_card_galery {
-        font-size: 1.5em;
+        line-height: 36px;
     }
     /* =============== cta social media */
     .button_instagram{
