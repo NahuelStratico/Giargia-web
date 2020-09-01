@@ -1,0 +1,227 @@
+/* Config */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+    scroll-behavior: smooth;
+    --open-sans:'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --color-logo:#8E9089;
+    --color-light:#ffffff;
+    --color-primary:#056676;
+    --color-footer:#141C3A;
+ }
+
+ /* ===================================== NAVBAR */
+
+.navbar{
+    background: var(--color-light);
+    min-height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+.logo{
+    min-width: 160px;
+    max-width: 180px;
+}
+
+.nav-link{
+    color: var(--color-footer);
+    font-family: var(--open-sans);
+    transition: .2s;
+}
+.nav-link:hover{
+    color: var(--color-footer);
+    font-weight: 600;
+}
+
+.navbar-toggler:focus{outline: none;}
+.icon_menu{
+    font-size: 1em;
+}
+
+/* ================================= contact title */
+.contact_container{
+    margin-top: 10rem;
+}
+.contact_title{
+    font-family: var(--open-sans);
+    font-size: 1.6em;
+    line-height: 36px;
+}
+.contact_p{
+    font-family: var(--open-sans);
+    font-size: 1.1em;
+    width: 80%;
+    line-height: 28px;
+}
+textarea.form-control {
+    height: 100px;
+}
+.contact_button{
+    background: var(--color-footer);
+    color: var(--color-light);
+}
+.contact_button:hover{
+    background: #222c50;
+    color: var(--color-light);
+}
+.contact_icons{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact_icons-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+.contact_icons i{
+    font-size: 2em;
+    color: var(--color-logo);
+}
+.contact_icons p{
+    font-size: 1.2em;
+    color: var(--color-footer);
+}
+
+/* ================================== Footer */
+.footer_container{
+    margin-top: 2rem;
+}
+
+.logo_footer{
+    width: 70px;  
+}
+.footer_row{
+    margin: 0;
+    background: var(--color-footer);
+    padding: 4rem 0;
+}
+.footer_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_title{
+    color: var(--color-light);
+}
+.nav_footer-link{
+    color: var(--color-light);
+}
+.nav_footer{
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav_footer-item{
+    margin-right: .7rem;
+}
+.nav_footer-link:hover{
+    color: var(--color-light);
+    text-decoration: none;
+}
+.icon_social-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+[class*="fab"]{
+    color: var(--color-light);
+    font-size: 1.5em;
+    margin-right: 2rem;
+}
+.derechos_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.derechos_icon{
+    color: var(--color-light);
+    margin-right: .3rem;
+}
+.derechos_text{   
+    color: var(--color-light);
+    margin: 0;
+    margin-right: .7rem;
+}
+.derechos_link{
+    color: var(--color-light);
+}
+.derechos_link:hover{
+    color: var(--color-light);
+    text-decoration: none;
+}
+.derechos_icon,.derechos_text, .derechos_link{
+    font-size: .8em;
+}
+
+
+
+/* ================================================= MEDIA QUERIES */
+
+@media screen and (max-width:768px){
+    .icon_menu{
+        font-size: 1.3em;
+    }
+    .contact_p{
+        width: 100%;
+    }
+    .contact_form{
+        margin-top: 2.5rem;
+    }
+    .contact_icons-col{
+        align-items: center;
+    }
+
+    /* =============== cta social media */
+    .button_instagram{
+        flex-direction: column;
+    }
+    .footer_col{
+        text-align: center;
+    }
+    .footer_title{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .nav_footer{
+        flex-direction: column;
+    }
+    .nav_footer-item{
+        margin-bottom: .7rem;
+    }
+    .derechos_container{
+        flex-direction: column;
+    }
+    .derechos_icon{
+        margin-bottom: .3rem;
+    }
+    .derechos_text{
+        margin-bottom: .3rem;
+    }
+    [class*="fab"]{
+        margin-right: 0;
+    }
+    .margin_insta{
+        margin: 0 1.4rem;
+    }
+    .icon_social-container{
+        margin: -0.5rem 0 2rem 0;
+    }
+}

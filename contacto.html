@@ -12,7 +12,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -42,7 +42,54 @@
         </div>
     </nav>
 
-    
+    <div class="container contact_container">
+        <!-- Formulario -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h4 class="contact_title">¿Necesitas ayuda con tu proyecto? <br> 
+                    <b>Nosotros te ayudamos</b>
+                </h4>
+                <p class="contact_p">Vení a nuestra sucursal en nordelta o coordinamos una reunion virtual.</p>
+
+            </div>
+            <div class="col-12 col-md-6 offset-lg-1 col-lg-5 contact_form">
+                <form>
+                    <div class="row mb-3">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" placeholder="Teléfono">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control text_area" id="validationTextarea" placeholder="Escribi tu consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block contact_button">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row contact_icons">
+            <div class="col-12 col-lg-4 contact_icons-col">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> <strong>Nordelta</strong> </p>
+                <p>Diego Palma 3340, Central Nuevo Tigre</p>
+            </div>
+            <div class="col-12 col-lg-4 contact_icons-col">
+                <i class="fas fa-envelope"></i>
+                <p>giargia.construcciones@gmail.com</p>
+            </div>
+            <div class="col-12 col-lg-4 contact_icons-col">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> <strong>Pilar</strong> </p>
+                <p>Acceso Norte km 45.5 Los Lagartos C.C.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer_container">
