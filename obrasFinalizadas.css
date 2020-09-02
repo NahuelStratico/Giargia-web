@@ -186,6 +186,7 @@ body{
 }
 .footer_title{
     color: var(--color-light);
+    font-size: 1.5rem;
 }
 .nav_footer-link{
     color: var(--color-light);

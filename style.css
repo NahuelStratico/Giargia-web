@@ -175,7 +175,7 @@ font-family: 'Poppins', sans-serif;
 }
 .icon_close{
     font-family: var(--poppins);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-primary);
     background: transparent;
     border: none;
@@ -275,7 +275,6 @@ font-family: 'Poppins', sans-serif;
 /* ====================================== Carousel / cta instagram*/
 .instagram_container{
     margin-top: 10rem;
-    margin-bottom: -95px;
 }
 .instagram_content{
     width: 100%;
@@ -300,9 +299,19 @@ font-family: 'Poppins', sans-serif;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.6rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
+.button_instagram:hover{
+    text-decoration: none;
+}
+.instagram_content-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .instagram_title{
     color: var(--color-light);
     font-family: var(--open-sans);
@@ -317,11 +326,13 @@ font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
     margin: 0;
 }
-
+.instagram_seguinos{
+    margin-right: 1rem!important;
+}
 .carousel_container{
     max-height: 500px;
     overflow: hidden;
-    margin: 4rem 0 0 0;
+    margin:0;
     z-index: 1!important;
 }
 .carousel_img{
@@ -348,6 +359,7 @@ font-family: 'Poppins', sans-serif;
 }
 .footer_title{
     color: var(--color-light);
+    font-size: 1.5rem;
 }
 .nav_footer-link{
     color: var(--color-light);
@@ -442,6 +454,21 @@ font-family: 'Poppins', sans-serif;
     }
     .info_margin{
         margin-bottom: 2rem;
+    }
+    /* =============== seguinos en: */
+    .button_instagram{
+        padding: .5rem 0px;
+    }
+    .instagram_title{
+        font-size: .8em;
+    }
+    .instagram_cta{
+        font-size: 1em;
+        margin-left: .5rem;
+    }
+    .instagram_seguinos{
+        font-size: 1em;
+        margin: 0!important;
     }
     /* =============== cta social media */
     .button_instagram{
