@@ -19,7 +19,15 @@ font-family: 'Poppins', sans-serif;
     --color-primary:#056676;
     --color-footer:#141C3A;
  }
-
+ .resp{
+    display: none;
+}
+.img_mobile{
+    display: none;
+}
+.img_desktop{
+    display: block;
+}
 
 /* ===================================== NAVBAR */
 
@@ -421,6 +429,13 @@ font-family: 'Poppins', sans-serif;
 /* ================================================= MEDIA QUERIES */
 
 @media screen and (max-width:768px){
+    .img_mobile{
+        display: block;
+    }
+    .img_desktop{
+        display: none;
+    }
+
     .icon_menu{
         font-size: 1.3em;
     }
